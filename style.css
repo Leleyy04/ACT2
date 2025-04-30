@@ -1,0 +1,50 @@
+/* Custom styles para sa ating signup form */
+
+body {
+background-image: url(BGIMG.jpg);
+}
+
+.card {
+  border-radius: 10px; /* Rounded corners para sa card */
+  border: none; /* Tanggalin ang default border */
+}
+
+/* Primary button color - pwedeng palitan ng gusto mong kulay */
+.btn-primary {
+  background-color: #0d6efd; /* Default Bootstrap blue */
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7; /* Slightly darker on hover */
+  border-color: #0a58ca;
+}
+
+/* Responsive adjustments - by default responsive na sa Bootstrap */
+/* Pero dagdag tayo ng konting padding sa mobile */
+@media (max-width: 576px) {
+  .card {
+      margin: 20px; /* Add margin sa mobile para hindi dikit sa edges */
+      padding: 20px !important; /* Dagdag padding sa mobile */
+  }
+}
+
+/* Style para sa invalid fields */
+.is-invalid {
+  border-color: #dc3545 !important; /* Red border for invalid fields */
+}
+
+/* Style para sa valid fields */
+.is-valid {
+  border-color: #198754 !important; /* Green border for valid fields */
+}
+
+/* Link color */
+a {
+  color: #0d6efd; /* Same as primary button color */
+  text-decoration: none; /* Tanggalin ang underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
